@@ -5,77 +5,88 @@ import springbook.user.domain.User;
 import java.sql.*;
 
 public class UserDao1 {
-    public void add(User user) throws SQLException, ClassNotFoundException{
-        Connection c = getConnection();
+    public void add(User user) throws ClassNotFoundException, SQLException{
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection c = DriverManager.getConnection(
+                "jdbc:mysql://localhost/springbook", "spring", "book"
+        );
 
-        PreparedStatement ptst = c.prepareStatement("insert into users values(?, ?, ?)");
+        PreparedStatement ps = null;
 
-        ptst.setString(1, user.getId());
-        ptst.setString(2, user.getName());
-        ptst.setString(3, user.getPassword());
+        ps = c.prepareStatement(
+                "insert into users(id, name, password) values(?, ?, ?)"
+        );
 
-        ptst.executeUpdate();
+        ps.setString(1, user.getId());
+        ps.setString(2, user.getName());
+        ps.setString(3, user.getPassword());
 
-        ptst.close();
+        ps.executeUpdate();
+
+        ps.close();
         c.close();
     }
 
-    public User get(String id) throws SQLException, ClassNotFoundException {
-        Connection c = getConnection();
+    public User get(String id) throws ClassNotFoundException, SQLException {
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection c = DriverManager.getConnection(
+                "jdbc:mysql://localhost/springbook", "spring", "book"
+        );
 
-        PreparedStatement ptst = c.prepareStatement("Select * from users where id = ?");
+        PreparedStatement ps = c.prepareStatement(
+                "select * from users where id = ?"
+        );
 
-        ptst.setString(1, id);
+        ps.setString(1, id);
 
-        ResultSet rs = ptst.executeQuery();
+        ResultSet rs = ps.executeQuery();
         rs.next();
-
         User user = new User();
         user.setId(rs.getString("id"));
         user.setName(rs.getString("name"));
         user.setPassword(rs.getString("password"));
 
         rs.close();
-        ptst.close();
+        ps.close();
         c.close();
 
         return user;
     }
 
-    public boolean exists(String id) throws SQLException, ClassNotFoundException {
-        Connection c = getConnection();
-
-        PreparedStatement ptst = c.prepareStatement(
-                "select id from users where id = ?"
+    public boolean exists(String id) throws ClassNotFoundException, SQLException {
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection c = DriverManager.getConnection(
+                "jdbc:mysql://localhost/springbook", "spring", "book"
         );
 
-        ResultSet rs = ptst.executeQuery();
+        PreparedStatement ps = c.prepareStatement(
+                "select * from users where id = ?"
+        );
+
+        ps.setString(1, id);
+
+        ResultSet rs = ps.executeQuery();
         rs.next();
-
-        String result = rs.getString("id");
-
-        rs.close();
-        ptst.close();
-        c.close();
-
-        return result != null;
+        return (rs.getString("id") != null) ? true : false;
     }
 
-    public void clearTable() throws SQLException, ClassNotFoundException {
-        Connection c = getConnection();
+    public void clearTable() throws ClassNotFoundException, SQLException {
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection c = DriverManager.getConnection(
+                "jdbc:mysql://localhost/springbook", "spring", "book"
+        );
 
-        Statement st = c.createStatement();
+        Statement stmt = c.createStatement();
+        stmt.execute("DELETE FROM users;");
 
-        st.execute("DELETE FROM users");
+        System.out.println("users 테이블 초기화 성공");
 
-        st.close();
-        c.close();
+        stmt.close();
     }
-
     private Connection getConnection() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection c = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/springbook", "spring", "book"
+                "jdbc:mysql://localhost/springbook", "spring", "book"
         );
         return c;
     }

@@ -1,6 +1,6 @@
 package springbook.user;
 
-import springbook.user.dao.UserDao;
+import springbook.user.dao.UserDao1;
 import springbook.user.domain.User;
 
 import java.sql.SQLException;
@@ -8,21 +8,21 @@ import java.sql.SQLException;
 public class Test1Application {
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
-        UserDao userDao = new UserDao();
+        UserDao1 userDao1 = new UserDao1();
 
-        userDao.clearTable();
+        userDao1.clearTable();
 
         User user = new User();
         user.setId("whiteship");
         user.setName("백기선");
         user.setPassword("married");
 
-        userDao.add(user);
+        userDao1.add(user);
 
         System.out.println(user.getId() + " 등록 성공");
 
         User user2 = new User();
-        user2 = userDao.get(user.getId());
+        user2 = userDao1.get(user.getId());
 
         System.out.println(user2.getName());
         System.out.println(user2.getPassword());
