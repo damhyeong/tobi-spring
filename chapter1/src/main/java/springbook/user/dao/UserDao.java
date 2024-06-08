@@ -52,4 +52,42 @@ public class UserDao {
 
         return user;
     }
+
+    public boolean exists(String id) throws ClassNotFoundException, SQLException {
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection c = DriverManager.getConnection(
+                "jdbc:mysql://localhost/springbook", "spring", "book"
+        );
+
+        PreparedStatement ps = c.prepareStatement(
+                "select * from users where id = ?"
+        );
+
+        ps.setString(1, id);
+
+        ResultSet rs = ps.executeQuery();
+        rs.next();
+        return (rs.getString("id") != null) ? true : false;
+    }
+
+    public void clearTable() throws ClassNotFoundException, SQLException {
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection c = DriverManager.getConnection(
+                "jdbc:mysql://localhost/springbook", "spring", "book"
+        );
+
+        Statement stmt = c.createStatement();
+        stmt.execute("DELETE FROM users;");
+
+        System.out.println("users 테이블 초기화 성공");
+
+        stmt.close();
+    }
+    private Connection getConnection() throws ClassNotFoundException, SQLException {
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection c = DriverManager.getConnection(
+                "jdbc:mysql://localhost/springbook", "spring", "book"
+        );
+        return c;
+    }
 }

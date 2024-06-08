@@ -10,6 +10,8 @@ public class Test1Application {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
         UserDao userDao = new UserDao();
 
+        userDao.clearTable();
+
         User user = new User();
         user.setId("whiteship");
         user.setName("백기선");
