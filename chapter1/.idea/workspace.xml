@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7ccd8277-8c27-4477-a180-08550e5c0b81" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/Chapter1Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/Test1Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/Test2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/Test3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/Test4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/dao/ConnectionMaker1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/dao/DConnectionMaker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/dao/DUserDao1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/dao/NUserDao1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/dao/SimpleConnectionMaker1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/dao/UserDao1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/dao/UserDao2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/dao/UserDao3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/dao/UserDao4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/dao/UserDao5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/domain/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/springbook/user/Chapter1ApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="chapter1" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;damhyeong&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/damhyeong/tobi-spring.git&quot;,
+    &quot;accountId&quot;: &quot;94c4eb9e-fb49-4876-918e-2f0191d9a40f&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2hM7WrBQDdBJjJuQHSZVLZsalZe" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Test1Application.executor": "Run",
+    "Application.Test2.executor": "Run",
+    "Application.Test3.executor": "Run",
+    "Application.Test4.executor": "Run",
+    "Application.Test6.executor": "Run",
+    "Gradle.Build chapter1.executor": "Run",
+    "Gradle.chapter1 [:Test1Application.main()].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.Chapter1Application.executor": "Run",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.editor",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Test6">
+    <configuration name="Test1Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="springbook.user.Test1Application" />
+      <module name="chapter1.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="springbook.user.Test2" />
+      <module name="chapter1.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="springbook.user.Test3" />
+      <module name="chapter1.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="springbook.user.Test4" />
+      <module name="chapter1.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="springbook.user.Test6" />
+      <module name="chapter1.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Chapter1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="chapter1.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="springbook.user.Chapter1Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test6" />
+        <item itemvalue="Application.Test4" />
+        <item itemvalue="Application.Test3" />
+        <item itemvalue="Application.Test2" />
+        <item itemvalue="Application.Test1Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="7ccd8277-8c27-4477-a180-08550e5c0b81" name="Changes" comment="" />
+      <created>1700676204478</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700676204478</updated>
+      <workItem from="1717392128630" duration="3988000" />
+      <workItem from="1717415296404" duration="2879000" />
+      <workItem from="1717480807877" duration="3430000" />
+      <workItem from="1717829030324" duration="10308000" />
+      <workItem from="1717938890788" duration="1674000" />
+      <workItem from="1717995329956" duration="5079000" />
+      <workItem from="1718164877704" duration="4475000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

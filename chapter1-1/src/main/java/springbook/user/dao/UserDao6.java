@@ -4,12 +4,18 @@ import springbook.user.domain.User;
 
 import java.sql.*;
 
-public abstract class UserDao3 {
+public class UserDao6 {
+    private ConnectionMaker1 connectionMaker;
+
+    public UserDao6(ConnectionMaker1 connectionMaker){
+        this.connectionMaker = connectionMaker;
+    }
+
     public void add(User user) throws SQLException, ClassNotFoundException {
-        Connection conn = getConnection();
+        Connection conn = connectionMaker.makeConnection();
 
         PreparedStatement ps = conn.prepareStatement(
-                "insert into users(id, name, password) values(?, ?, ?)"
+                "INSERT INTO users(id, name, password) VALUES (?, ?, ?)"
         );
         ps.setString(1, user.getId());
         ps.setString(2, user.getName());
@@ -20,12 +26,15 @@ public abstract class UserDao3 {
         ps.close();
         conn.close();
     }
-    public User get(String id) throws SQLException, ClassNotFoundException{
-        Connection conn = getConnection();
+
+    public User get(String id) throws SQLException, ClassNotFoundException {
+        Connection conn = connectionMaker.makeConnection();
 
         PreparedStatement ps = conn.prepareStatement(
-                "select * from users where id = ?"
+                "SELECT * FROM users WHERE id = ?"
         );
+
+        ps.setString(1, id);
 
         ResultSet rs = ps.executeQuery();
         rs.next();
@@ -41,37 +50,38 @@ public abstract class UserDao3 {
 
         return user;
     }
-    public boolean exists(String id) throws SQLException, ClassNotFoundException{
-        Connection conn = getConnection();
+
+    public boolean isExistId(String id) throws SQLException, ClassNotFoundException {
+        Connection conn = connectionMaker.makeConnection();
 
         PreparedStatement ps = conn.prepareStatement(
-                "select id from users where id = ?"
+                "SELECT EXISTS(SELECT 1 FROM users WHERE id = ?) AS isExists"
         );
         ps.setString(1, id);
 
         ResultSet rs = ps.executeQuery();
+
         rs.next();
 
-        String result = rs.getString("id");
+        boolean isExists = rs.getBoolean("isExists");
 
         rs.close();
         ps.close();
         conn.close();
 
-        return result != null;
+        return isExists;
     }
+
     public void clearTable() throws SQLException, ClassNotFoundException {
-        Connection conn = getConnection();
+        Connection conn = connectionMaker.makeConnection();
 
         Statement stmt = conn.createStatement();
 
         stmt.execute(
-                "DELETE * FROM users"
+                "DELETE FROM users"
         );
 
         stmt.close();
         conn.close();
     }
-
-    public abstract Connection getConnection() throws SQLException, ClassNotFoundException;
 }
