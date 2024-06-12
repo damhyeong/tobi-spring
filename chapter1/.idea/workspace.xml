@@ -4,33 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ccd8277-8c27-4477-a180-08550e5c0b81" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/Chapter1Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/Test1Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/Test2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/Test3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/Test4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/dao/ConnectionMaker1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/dao/DConnectionMaker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/dao/DUserDao1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/dao/NUserDao1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/dao/SimpleConnectionMaker1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/dao/UserDao1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/dao/UserDao2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/dao/UserDao3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/dao/UserDao4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/dao/UserDao5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springbook/user/domain/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/springbook/user/Chapter1ApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="7ccd8277-8c27-4477-a180-08550e5c0b81" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -225,7 +199,7 @@
       <workItem from="1717829030324" duration="10308000" />
       <workItem from="1717938890788" duration="1674000" />
       <workItem from="1717995329956" duration="5079000" />
-      <workItem from="1718164877704" duration="4475000" />
+      <workItem from="1718164877704" duration="4583000" />
     </task>
     <servers />
   </component>
